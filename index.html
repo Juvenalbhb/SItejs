@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des publications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Gestion des publications</h1>
+
+    <form id="postForm">
+
+        <input
+            type="number"
+            id="userId"
+            placeholder="ID de l'auteur"
+            required
+        >
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Titre de la publication"
+            required
+        >
+
+        <textarea
+            id="body"
+            rows="5"
+            placeholder="Contenu de la publication"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Ajouter une publication
+        </button>
+
+    </form>
+
+    <div id="postsContainer"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
